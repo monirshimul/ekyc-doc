@@ -1,0 +1,120 @@
+Dear Mr. Monirul Islam,
+
+ 
+
+Please refer your mail for deployed the ERA-eKYC First UAT Release in BCBL.
+
+ 
+Please also refer to our letter Bcbl/HO/EGSD/2021/2494 dated on February 25, 2021 regarding work order for Supply, installation & implementation of  E-KYC solution with Customer self on boarding application for BCBL following terms and conditions.
+
+ 
+
+ 
+
+SL NO.	            Technical Terms & conditions
+
+
+1	Assisted Onboarding  module = ok
+
+2	customer on boarding App module = 
+
+3	Oracle Database Platform = ok
+
+4	Fingerprint Based Verification = ok
+
+5	Face Based Verification = ok
+
+6	Maker Checker Compliant = ok
+
+7	Dynamic Role Based Authentication & Authorization = ok
+
+8	Banking Grade Security = ok, for UAT Environment
+
+9	BFIU Guideline Compliant = ok
+
+10	Digital Customer Profiling and Automated Risk Grading = ok
+
+11	CBS, Election Commission Integration = 
+
+12	AML, Sanction Screening Integration = 
+
+13	SMS & Email Integration = 
+
+14	Self-Onboarding- APP = 
+
+15	Interface to CBS,  ATM, Credit Card etc. for  customer on boarding App = 
+
+16	AI based Live Photo Capture = ok
+
+17	Image auto enhance and crop = ok
+
+18	SDK/Mobile App for Android and iOS for Self-Check In = 
+
+19	Web version for Assisted Onboarding = ok
+
+20	Contact verification (Mobile, Email) = ok
+
+21	Customer Photo Capture/Upload (for Assisted Onboarding) = ok
+
+22	Customer Risk Grading (For Regular E-KYC) = ok
+
+23	Nominee Information & Photo Capture = ok
+
+24	Beneficiary Owner Information Capture in Assisted Onboarding Pin/Signature set in Self Check In = 
+
+25	Signature upload option or Signature capture through sign pad = ok
+
+26	Digital KYC profiler = ok
+
+27	SMS and Email integration
+
+28	Data Processing System : This module integrates with the Election Commission to verify the customer data captured from the ID cards with the data stored on the central server of Election Commission or Porichoy.
+	Apart from data verification, translate data bangla to English and it will be stores customer full information to CBS database for customer account opening. = ok
+
+29	E-KYC Solution must be Vulnerability assessment and penetration testing (VAPT) certified as the following:
+
+	a)      VAPT must be done for both Android and IOS version.
+
+	b)      VAPT vendor must have 5 years experience for VAPT of IT system and 3 years experience for VAPT of at least 1(one) E-KYC Solution.
+
+	c)       VAPT report must be submitted separately and directly to both the parties "bank and M/s Era infotech".
+
+	d)      If any vulnerabilities found then it must be rectified by the given time schedule.
+
+	e)      VAPT done by bank in future, if any vulnerabilities found then it must be rectified.
+
+	= Not Available
+
+30.	Active partcipation during Web Application Firewall(WAF) implementation for E-KYC solution. = ok
+
+31.	For E-KYC solution image conversion should be automated. Customer may upload any size of image in E-KYC Mobile app but system should automatically convert the image into its standard format. = ok
+
+32.	Gap analysis, Data Migration, Any type interface, All API create and Integrated with SSL-ecommerze,
+	payment gateway, mobile operator ,merchant payment,NPSB,BEFTN,RTGS,mobile bank(bikash,nagad,rocket etc)
+	,all billing utility as per tender, support service, Implementation, Training and time to time customization as per Banks requirement for E-KYC solution.
+	= Not Available	
+ 
+
+ 
+
+Please confirm us all the features are working and proper install at our end.
+
+ 
+
+ 
+
+ 
+
+Thanking you.
+
+ 
+
+Firoz Ahmed
+
+Assistant Vice President
+
+IT Division
+
+BCBL
+
+Cell:01755542422

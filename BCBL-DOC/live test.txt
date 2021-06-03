@@ -1,0 +1,7 @@
+//////user authentication:
+user id :100086@bcblbd.com, pass:Na@123
+
+/////Existing account
+S02,nid 3814785204302
+
+Product S01, nid: 19882694813872887

@@ -1,0 +1,11 @@
+userName : rana2563
+password : NA*30703@mah##52
+portal address: 103.17.68.2
+
+hostFile Mapping : 192.168.249.10  prportal.nidw.gov.bd
+
+url : https://prportal.nidw.gov.bd/partner-service/rest/auth/login?Content-Type=application/json
+
+
+
+

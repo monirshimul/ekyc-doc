@@ -1,0 +1,150 @@
+
+function isNull(val){
+    //console.log("checking", val)
+    if(val === undefined || val === null){
+        return true
+    }
+    return false
+}
+
+function nomineeFilter(arr){
+
+    console.log("nominee")
+    let arrRes = []  
+        for(let i = 0; i< arr.length; i++){  
+            let nominee = arr[i]       
+            let obj = {              
+                id : nominee.id.toString(),
+                name : nominee.name.toString(),
+                relation : nominee.relation.toString(),
+                dob : nominee.dob.toString(),
+                photo : nominee.photo.toString(),
+                isMinor : nominee.isMinor.toString(),
+                percentage: nominee.percentage.toString()
+            }
+            
+            if(nominee.guardian){          
+                obj.guardian = nominee.guardian
+            }
+            arrRes.push(obj)
+        }
+        console.log(arrRes)
+        return arrRes;   
+}
+
+
+
+function formatReopen(data){
+
+    console.log("Clling")
+
+    const cbsFormat = {
+
+        account:{
+            title: isNull(data.title) ? "" : data.title,
+            type: isNull(data.type) ? "" : data.type,
+            productType: isNull(data.productType) ? "" : data.productType,
+            productCode: isNull(data.productCode) ? "" : data.productCode,
+            productCategoryCode: isNull(data.productCategoryCode) ? "" : data.productCategoryCode,
+            branchOrAgentPointCode: isNull(data.branchOrAgentPointCode) ? "" : data.branchOrAgentPointCode,
+            transactionOrMaturityAmount: isNull(data.transactionOrMaturityAmount) ? "" : data.transactionOrMaturityAmount.toString(),
+            tenor: isNull(data.tenor) ? "" : data.tenor,
+            channelCode: isNull(data.channelCode) ? "" : data.channelCode
+        },
+
+        applicant: {
+            nid: isNull(data.applicants[0].nid) ? "" : data.applicants[0].nid,
+            name: isNull(data.applicants[0].name) ? "" : data.applicants[0].name,
+            nameBangla: isNull(data.applicants[0].nameBangla) ? "" : data.applicants[0].nameBangla,
+            dob: isNull(data.applicants[0].dob) ? "" : data.applicants[0].dob,
+            dobDate: isNull(data.applicants[0].dobDate) ? "" : data.applicants[0].dobDate,
+            motherName: isNull(data.applicants[0].motherName) ? "" : data.applicants[0].motherName,
+            motherNameBangla: isNull(data.applicants[0].motherNameBangla) ? "" : data.applicants[0].motherNameBangla,
+            fatherName: isNull(data.applicants[0].fatherName) ? "" : data.applicants[0].fatherName,
+            fatherNameBangla: isNull(data.applicants[0].fatherNameBangla) ? "" : data.applicants[0].fatherNameBangla,
+            spouseName: isNull(data.applicants[0].spouseName) ? "" : data.applicants[0].spouseName,
+            gender: isNull(data.applicants[0].gender) ? "" : data.applicants[0].gender,
+            profession: isNull(data.applicants[0].profession) ? "" : data.applicants[0].profession,
+            mobile: isNull(data.applicants[0].mobile) ? "" : data.applicants[0].mobile,
+            pin:isNull(data.applicants[0].pin) ? "" : data.applicants[0].pin,
+            verificationType: isNull(data.applicants[0].verificationType) ? "" : data.applicants[0].verificationType,
+            onboardingType: isNull(data.applicants[0].onboardingType) ? "" : data.applicants[0].onboardingType,
+        },
+
+        applicantPresentAddress: {
+            addressType: isNull(data.applicants[0].presentAddress.addressType) ? "" : data.applicants[0].presentAddress.addressType,
+            districtCode: isNull(data.applicants[0].presentAddress.districtCode) ? "" : data.applicants[0].presentAddress.districtCode,
+            upozilaCode: isNull(data.applicants[0].presentAddress.upozilaCode) ? "" : data.applicants[0].presentAddress.upozilaCode,
+            unionCode: isNull(data.applicants[0].presentAddress.unionCode) ? "" : data.applicants[0].presentAddress.unionCode,
+            additionalMouzaOrMoholla: isNull(data.applicants[0].presentAddress.additionalMouzaOrMoholla) ? "" : data.applicants[0].presentAddress.additionalMouzaOrMoholla,
+            additionalVillageOrRoad: isNull(data.applicants[0].presentAddress.additionalVillageOrRoad) ? "" : data.applicants[0].presentAddress.additionalVillageOrRoad,
+            cityCorporationOrMunicipality: isNull(data.applicants[0].presentAddress.cityCorporationOrMunicipality) ? "" : data.applicants[0].presentAddress.cityCorporationOrMunicipality,
+            district: isNull(data.applicants[0].presentAddress.district) ? "" : data.applicants[0].presentAddress.district,
+            division: isNull(data.applicants[0].presentAddress.division) ? "" : data.applicants[0].presentAddress.division,
+            homeOrHoldingNo: isNull(data.applicants[0].presentAddress.homeOrHoldingNo) ? "" : data.applicants[0].presentAddress.homeOrHoldingNo,
+            postOffice: isNull(data.applicants[0].presentAddress.postOffice) ? "" : data.applicants[0].presentAddress.postOffice,
+            region: isNull(data.applicants[0].presentAddress.region) ? "" : data.applicants[0].presentAddress.region,
+            unionOrWard:isNull(data.applicants[0].presentAddress.unionOrWard) ? "" : data.applicants[0].presentAddress.unionOrWard,
+            upozila: isNull(data.applicants[0].presentAddress.upozila) ? "" : data.applicants[0].presentAddress.upozila,
+            postalCode: isNull(data.applicants[0].presentAddress.postalCode) ? "" : data.applicants[0].presentAddress.postalCode,
+            rmo: isNull(data.applicants[0].presentAddress.rmo) ? "" : data.applicants[0].presentAddress.rmo,
+            wardForUnionPorishod: isNull(data.applicants[0].presentAddress.wardForUnionPorishod) ? "" : data.applicants[0].presentAddress.wardForUnionPorishod,
+            additionalMouzaOrMohollaEng: isNull(data.applicants[0].presentAddress.additionalMouzaOrMohollaEng) ? "" : data.applicants[0].presentAddress.additionalMouzaOrMohollaEng,
+            additionalVillageOrRoadEng: isNull(data.applicants[0].presentAddress.additionalVillageOrRoadEng) ? "" : data.applicants[0].presentAddress.additionalVillageOrRoadEng,
+            cityCorporationOrMunicipalityEng: isNull(data.applicants[0].presentAddress.cityCorporationOrMunicipalityEng) ? "" : data.applicants[0].presentAddress.cityCorporationOrMunicipalityEng,
+            districtEng:isNull(data.applicants[0].presentAddress.districtEng) ? "" : data.applicants[0].presentAddress.districtEng,
+            divisionEng: isNull(data.applicants[0].presentAddress.divisionEng) ? "" : data.applicants[0].presentAddress.divisionEng,
+            homeOrHoldingNoEng: isNull(data.applicants[0].presentAddress.homeOrHoldingNoEng) ? "" : data.applicants[0].presentAddress.homeOrHoldingNoEng,
+            postOfficeEng: isNull(data.applicants[0].presentAddress.postOfficeEng) ? "" : data.applicants[0].presentAddress.postOfficeEng,
+            regionEng: isNull(data.applicants[0].presentAddress.regionEng) ? "" : data.applicants[0].presentAddress.regionEng,
+            unionOrWardEng: isNull(data.applicants[0].presentAddress.unionOrWardEng) ? "" : data.applicants[0].presentAddress.unionOrWardEng,
+            upozilaEng: isNull(data.applicants[0].presentAddress.upozilaEng) ? "" : data.applicants[0].presentAddress.upozilaEng,
+        },
+
+        applicantPermanentAddress:{
+            addressType: isNull(data.applicants[0].permanentAddress.addressType) ? "" : data.applicants[0].permanentAddress.addressType,
+            districtCode: isNull(data.applicants[0].permanentAddress.districtCode) ? "" : data.applicants[0].permanentAddress.districtCode,
+            upozilaCode: isNull(data.applicants[0].permanentAddress.upozilaCode) ? "" : data.applicants[0].permanentAddress.upozilaCode,
+            unionCode: isNull(data.applicants[0].permanentAddress.unionCode) ? "" : data.applicants[0].permanentAddress.unionCode,
+            additionalMouzaOrMoholla: isNull(data.applicants[0].permanentAddress.additionalMouzaOrMoholla) ? "" : data.applicants[0].permanentAddress.additionalMouzaOrMoholla,
+            additionalVillageOrRoad: isNull(data.applicants[0].permanentAddress.additionalVillageOrRoad) ? "" : data.applicants[0].permanentAddress.additionalVillageOrRoad,
+            cityCorporationOrMunicipality: isNull(data.applicants[0].permanentAddress.cityCorporationOrMunicipality) ? "" : data.applicants[0].permanentAddress.cityCorporationOrMunicipality,
+            district: isNull(data.applicants[0].permanentAddress.district) ? "" : data.applicants[0].permanentAddress.district,
+            division: isNull(data.applicants[0].permanentAddress.division) ? "" : data.applicants[0].permanentAddress.division,
+            homeOrHoldingNo: isNull(data.applicants[0].permanentAddress.homeOrHoldingNo) ? "" : data.applicants[0].permanentAddress.homeOrHoldingNo,
+            postOffice: isNull(data.applicants[0].permanentAddress.postOffice) ? "" : data.applicants[0].permanentAddress.postOffice,
+            region: isNull(data.applicants[0].permanentAddress.region) ? "" : data.applicants[0].permanentAddress.region,
+            unionOrWard:isNull(data.applicants[0].permanentAddress.unionOrWard) ? "" : data.applicants[0].permanentAddress.unionOrWard,
+            upozila: isNull(data.applicants[0].permanentAddress.upozila) ? "" : data.applicants[0].permanentAddress.upozila,
+            postalCode: isNull(data.applicants[0].permanentAddress.postalCode) ? "" : data.applicants[0].permanentAddress.postalCode,
+            rmo: isNull(data.applicants[0].permanentAddress.rmo) ? "" : data.applicants[0].permanentAddress.rmo,
+            wardForUnionPorishod: isNull(data.applicants[0].permanentAddress.wardForUnionPorishod) ? "" : data.applicants[0].permanentAddress.wardForUnionPorishod,
+            additionalMouzaOrMohollaEng: isNull(data.applicants[0].permanentAddress.additionalMouzaOrMohollaEng) ? "" : data.applicants[0].permanentAddress.additionalMouzaOrMohollaEng,
+            additionalVillageOrRoadEng: isNull(data.applicants[0].permanentAddress.additionalVillageOrRoadEng) ? "" : data.applicants[0].permanentAddress.additionalVillageOrRoadEng,
+            cityCorporationOrMunicipalityEng: isNull(data.applicants[0].permanentAddress.cityCorporationOrMunicipalityEng) ? "" : data.applicants[0].permanentAddress.cityCorporationOrMunicipalityEng,
+            districtEng:isNull(data.applicants[0].permanentAddress.districtEng) ? "" : data.applicants[0].permanentAddress.districtEng,
+            divisionEng: isNull(data.applicants[0].permanentAddress.divisionEng) ? "" : data.applicants[0].permanentAddress.divisionEng,
+            homeOrHoldingNoEng: isNull(data.applicants[0].permanentAddress.homeOrHoldingNoEng) ? "" : data.applicants[0].permanentAddress.homeOrHoldingNoEng,
+            postOfficeEng: isNull(data.applicants[0].permanentAddress.postOfficeEng) ? "" : data.applicants[0].permanentAddress.postOfficeEng,
+            regionEng: isNull(data.applicants[0].permanentAddress.regionEng) ? "" : data.applicants[0].permanentAddress.regionEng,
+            unionOrWardEng: isNull(data.applicants[0].permanentAddress.unionOrWardEng) ? "" : data.applicants[0].permanentAddress.unionOrWardEng,
+            upozilaEng: isNull(data.applicants[0].permanentAddress.upozilaEng) ? "" : data.applicants[0].permanentAddress.upozilaEng,
+        },
+
+        applicantFile:{
+            nidFront: isNull(data.applicants[0].files.nidFront) ? "" : data.applicants[0].files.nidFront,
+            nidBack: isNull(data.applicants[0].files.nidBack) ? "" : data.applicants[0].files.nidBack,
+            photo: isNull(data.applicants[0].files.photo) ? "" : data.applicants[0].files.photo,
+            signature: isNull(data.applicants[0].files.signature) ? "" : data.applicants[0].files.signature,
+            nidFrontImage: isNull(data.applicants[0].files.nidFrontImage) ? "" : data.applicants[0].files.nidFrontImage,
+        },
+
+        nominees: nomineeFilter(data.applicants[0].nominees)
+
+    }
+    //console.log(cbsFormat)
+
+    return cbsFormat
+}
+
+module.exports = {formatReopen : formatReopen};

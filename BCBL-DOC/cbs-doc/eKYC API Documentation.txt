@@ -1,0 +1,34 @@
+1. User Authentication
+===========================================================
+url:http://10.11.201.45:8084/eKYCApi/eKYCApiUserValidation
+method type:post
+json request:
+-----------------
+{
+"userID":"input user id"
+"userPass":"input password"
+}
+
+
+Response:
+-------------------
+{
+status:boolean,
+result:Json array
+
+}
+2. Account Check
+==========================================================
+url:http://10.11.201.45:8084/eKYCApi/eKYCAccountInfoCheck
+method type:post
+json request:
+--------------
+{
+"nidNo":"input nid no"
+"product":"input product no"
+}
+Response:
+-----------
+ {
+status:boolean
+}

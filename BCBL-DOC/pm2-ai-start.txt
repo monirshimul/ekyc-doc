@@ -1,0 +1,7 @@
+pm2 start app.py --name ai-engine --interpreter "/home/ekycapp/era-ekyc/era-ekyc-bcbl-2.4.0-uat/ai/ai-env/bin/python"
+
+pm2 start dist/app.js --name app-engine -i max
+
+pm2 start index.js --name integration-engine -i max
+
+pm2 start index.js --name native-engine -i max

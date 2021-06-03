@@ -1,0 +1,14 @@
+///User Authentication
+{
+    "userid":"era@mybank.com",
+    "userPass":"A1@a"
+}
+
+
+//Existing account Check
+
+Product S05
+Nid : 2690243668441
+
+
+

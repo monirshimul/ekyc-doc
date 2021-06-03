@@ -1,0 +1,160 @@
+{
+    "account": {
+        "title": "Tanzir",
+        "type": "S",
+        "productType": "CONVENTIONAL",
+        "productCode": "S05",
+        "productCategoryCode": "C0",
+        "branchOrAgentPointCode": "003",
+        "transactionOrMaturityAmount": 100005,
+        "tenor": "<Optional, for TD and RD, Deposit Time period>",
+        "channelCode": "CBS"
+    },
+    "applicant": {
+        "nid": "7304909067",
+        "name": "Tanzir",
+        "nameBangla":"মোঃ হাসান",
+        "dob": "1981-02-15",
+        "dobDate": "1981-02-15T00:00:00.000Z",
+        "motherName": "Monwara",
+        "motherNameBangla": "মনোয়ারা ",
+        "fatherName": "Md. Mahabub",
+        "fatherNameBangla": "মোঃ মাহাবুব ",
+        "spouseName": "<Optional, Spouse name>",
+        "gender": "M",
+        "profession": "BAN",
+        "mobile": "01689490273",
+        "pin": "<Optional>",
+        "verificationType": "FACE",
+        "onboardingType": "ASSISTED"
+    },
+    "applicantPresentAddress": {
+        "addressType": "PRESENT",
+        "districtCode": "01",
+        "upozilaCode": "14",
+        "unionCode": "15",
+        "additionalMouzaOrMoholla": "আমতলী (মহাখালী)",
+        "additionalVillageOrRoad": "নিউ এয়ারপোর্ট রোড-আমতলী",
+        "cityCorporationOrMunicipality": "ঢাকা উত্তর সিটি কর্পোরেশন",
+        "district": "ঢাকা",
+        "division": "ঢাকা",
+        "homeOrHoldingNo":  "এইচ",
+        "postOffice": "গুলশান মডেল টাউন",
+        "region": "ঢাকা",
+        "unionOrWard":"ওয়ার্ড নং-২০ (পার্ট)",
+        "upozila": "বনানী",
+        "postalCode": "1212",
+        "rmo": "9",
+        "wardForUnionPorishod": "0",
+        "additionalMouzaOrMohollaEng": "Mohakhali",
+        "additionalVillageOrRoadEng": "New Airport Road",
+        "cityCorporationOrMunicipalityEng": "Uttar city corporeation",
+        "districtEng":"Bagerhat",
+        "divisionEng": "Khulna",
+        "homeOrHoldingNoEng": "H",
+        "postOfficeEng": "Gulshan Model Town",
+        "regionEng": "Dhaka",
+        "unionOrWardEng": "CHARBANIAHARI",
+        "upozilaEng": "Chitalmari"
+    },
+    "applicantPermanentAddress": {
+        "addressType": "PERMANENT",
+        "districtCode": "01",
+        "upozilaCode": "14",
+        "unionCode": "15",
+        "additionalMouzaOrMoholla": "আমতলী (মহাখালী)",
+        "additionalVillageOrRoad": "নিউ এয়ারপোর্ট রোড-আমতলী",
+        "cityCorporationOrMunicipality": "ঢাকা উত্তর সিটি কর্পোরেশন",
+        "district": "ঢাকা",
+        "division": "ঢাকা",
+        "homeOrHoldingNo":  "এইচ",
+        "postOffice": "গুলশান মডেল টাউন",
+        "region": "ঢাকা",
+        "unionOrWard":"ওয়ার্ড নং-২০ (পার্ট)",
+        "upozila": "বনানী",
+        "postalCode": "1212",
+        "rmo": "9",
+        "wardForUnionPorishod": "0",
+        "additionalMouzaOrMohollaEng": "Mohakhali",
+        "additionalVillageOrRoadEng": "New Airport Road",
+        "cityCorporationOrMunicipalityEng": "Uttar city corporeation",
+        "districtEng":"Bagerhat",
+        "divisionEng": "Khulna",
+        "homeOrHoldingNoEng": "H",
+        "postOfficeEng": "Gulshan Model Town",
+        "regionEng": "Dhaka",
+        "unionOrWardEng": "CHARBANIAHARI",
+        "upozilaEng": "Chitalmari"
+    },
+    "applicantFile": {
+        "nidFront": "<Base64 Image>",
+        "nidBack": "<Base64 Image>",
+        "photo": "<Live image Base64 Image>",
+        "signature": "<Base64 Image>",
+        "nidFrontImage": "<EC Base64 Image>"
+    },
+   
+    "nominees": [
+        {
+            "dob": "1991-04-26T00:00:00.000Z",
+            "isMinor": false,
+            "name": "Nahid",
+            "percentage": 50,
+            "photo": "<base 64 image>",
+            "relation": "BRO"
+        },
+
+        {
+            "dob": "2021-04-25T00:00:00.000Z",
+            "isMinor": true,
+            "name": "Abir",
+            "percentage": 50,
+            "photo": "<base 64 image>",
+            "relation": "BRO",
+           
+            "guardian": {
+                "nid":"1234567890",
+                "name": "Arif",
+                "relation": "BRO",
+                "address": "Mohakhali",
+                "photo": "<base 64 image>"
+            }
+        }
+    ],
+    "regularAdditionalData": {
+        "monthlyIncome": 15000,
+        "sourceOfFund": "Source of fund string",
+        "nationality": "Bangladeshi",
+        "riskInfo": [
+            "1.3",
+            "2.1.1",
+            "3.1.1",
+            "3.2.1",
+            "3.3.1",
+            "4.1.2",
+            "5.b.15",
+            "6.1.1",
+            "7.1.1"
+        ] ,
+       
+        "passport": {
+            "data": "<Base 64 image>",
+            "fileName": "1591536252737.JPEG",
+            "fileType": "image/jpeg"
+        },
+        "tin": {
+            "data":"<Base 64 image>",
+            "fileName": "download (3).jpg",
+            "fileType": "image/jpeg"
+        },
+        "birthCertificate": {
+            "data":"<Base 64 image>",
+            "fileName": "shimul.JPEG",
+            "fileType": "image/jpeg"
+        }
+    },
+  
+    "fingerprint": {
+        "rIndex": "<Base64 of rIndec>"
+    }
+}
