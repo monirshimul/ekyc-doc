@@ -1,0 +1,33 @@
+
+http://10.130.117.117:8088/eKYCApi/eKYCApiBranchListRequest
+
+http://10.130.117.117:8088/eKYCApi/eKYCApiUserValidation
+
+http://10.130.117.117:8088/eKYCApi/eKYCAccountOpening
+
+http://10.130.117.117:8088/eKYCApi/eKYCAccountInfoCheck
+
+{
+    "userID":"500001",
+    "userPass":"123456"
+}
+
+
+Sk.Shariful, 11:18 PM
+https://192.168.200.60/eKYCApi/eKYCApiUserValidation
+username = WEBADMIN
+password = WEBADMIN
+
+
+https://192.168.200.60/eKYCApi/eKYCApiBranchListRequest
+
+https://192.168.200.60/eKYCApi/eKYCApiUserValidation
+
+https://192.168.200.60/eKYCApi/eKYCAccountOpening
+
+https://192.168.200.60/eKYCApi/eKYCAccountInfoCheck
+
+
+
+Mehedi, 12:00 AM
+Thank you
